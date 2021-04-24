@@ -69,7 +69,7 @@ class Index extends React.Component {
           <div id="projects" className="d-flex justify-content-center"><h2 className={'mx-auto mb-4 ' + css.headline}>My Project</h2></div>
           <div className="row">
             {this.props.data.map((data, index) => (
-              <div className="col-md-4 col-sm-6 mb-4">
+              <div className="col-md-4 col-sm-6 mb-4" key={index}>
 
                 <div className="card h-100">
                   <img src={data.image} className="card-img-top" width="90px" height="200px" alt="..." />
@@ -77,8 +77,8 @@ class Index extends React.Component {
                     <h5 className="card-title">{data.name}</h5>
                     {/* <p className="card-text">ประเภท : โปรเจครายวิชา ปี 1</p> */}
                     <ul>
-                      {data.tools.map((data, index) => (
-                        <li>{data}</li>
+                      {data.tools.map((data, index2) => (
+                        <li key={index2}>{data}</li>
                       ))}
                     </ul>
                   </div>
@@ -105,8 +105,8 @@ class Index extends React.Component {
     )
   }
 }
-export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/Index')
+export const getServerSideProps  = async () => {
+  const res = await fetch('https://narongded-portfolio.herokuapp.com/api/Index')
   const data = await res.json()
   return {
     props: data, // will be passed to the page component as props
