@@ -1,0 +1,33 @@
+.test {
+  background-color: #fbdf40;
+  height: 500px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.history {
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headline {
+  display: inline-block;
+  box-shadow: 0px -0.4em 0px rgba(255, 196, 0, 0.63) inset;
+}
+
+.btnViewPort {
+  background: #fff;
+  color: #000;
+  box-shadow: 5px 5px 0px #000;
+  border: 2px solid #000;
+  transition: .5s;
+}
+
+.btnViewPort:hover {
+  background: #f6e05e;
+}
