@@ -107,7 +107,7 @@ class Index extends React.Component {
 }
 export const getServerSideProps  = async () => {
  
-  const res = await fetch('http://localhost:3000/api/Index')
+  const res = await fetch('https://narongded-portfolio.herokuapp.com/api/Index')
   const data = await res.json()
   return {
     props: data, // will be passed to the page component as props
