@@ -50,7 +50,7 @@ const portfolioData = [
         name: 'Carcare',
         url: '',
         status: 0,
-        github : 'https://github.com/Narongded/Petcare',
+        github : 'https://github.com/Narongded/Carecare',
         image: '/img/Carcare.png',
         type: 'โปรเจครายวิชา',
         tools: ['Django']
@@ -109,6 +109,24 @@ const portfolioData = [
         type: 'โปรเจครายวิชา',
         tools: ['Node.js', 'mongoDB']
     },
+    {
+        name: 'EX10',
+        url: 'https://ex10.tech/docs/index',
+        status: 0,
+        github : '',
+        image: '/img/ex10.png',
+        type: 'โปรเจครายวิชา',
+        tools: ['React.js','Node.js','AWS s3']
+    },
+    {
+        name: 'Portfolio',
+        url: 'https://narongded-portfolio.herokuapp.com/',
+        status: 0,
+        github : 'https://github.com/Narongded/my-Portfolio',
+        image: '/img/portfolio.png',
+        type: 'โปรเจครายวิชา',
+        tools: ['Next.js', 'mongoDB']
+    }
 ]
 
 export default (req, res) => {
