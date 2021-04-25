@@ -125,7 +125,7 @@ const portfolioData = [
         github : 'https://github.com/Narongded/my-Portfolio',
         image: '/img/portfolio.png',
         type: 'โปรเจครายวิชา',
-        tools: ['Next.js', 'mongoDB']
+        tools: ['Next.js']
     }
 ]
 
