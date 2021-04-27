@@ -2,7 +2,10 @@ import nodemailer from 'nodemailer'
 
 export default (req, res) => {
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
+        requireTLS: true,
         auth: {
             user: 'slackdevtool002@gmail.com',
             pass: 'jackkubpom55'
@@ -19,7 +22,7 @@ export default (req, res) => {
            ระยะเวลาที่สามารถเริ่มงาน
                 วันที่ 16 มิย. 2564 `,
         attachments: [
-            {   
+            {
                 filename: 'Resume.pdf',
                 path: process.cwd() + '/public/file/Narongded Pinprechachai.pdf' // stream this file
             }

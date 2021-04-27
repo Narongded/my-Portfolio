@@ -16,7 +16,7 @@ class Index extends React.Component {
     // console.log(this.state.name)
   }
   handleSendEmail = async () => {
-    await fetch('https://narongded-portfolio.herokuapp.com/api/SendEmail',
+    await fetch('http://localhost:3000/api/SendEmail',
       {
         headers: { 'Content-Type': 'application/json' },
         method: 'POST',
