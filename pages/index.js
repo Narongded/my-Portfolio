@@ -48,7 +48,7 @@ class Index extends React.Component {
       },
       {
           name: 'Cineplex',
-          url: 'https://limitless-sierra-34349.herokuapp.com/index.html',
+          url: 'https://narongded.github.io/cinema/',
           status: 1,
           github : 'https://github.com/Narongded/cinema',
           image: 'img/cinema.png',
