@@ -1,7 +1,16 @@
 import nodemailer from 'nodemailer'
 
 export default (req, res) => {
-   
+    const transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
+        requireTLS: true,
+        // auth: {
+        //     user:
+        //     pass: 
+        // }
+    });
     var mailOptions = {
         from: `slackdevtool002@gmail.com`,
         to: `${req.body.email}`,

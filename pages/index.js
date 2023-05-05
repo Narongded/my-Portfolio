@@ -5,10 +5,140 @@ import css from '../styles/Index.module.css'
 class Index extends React.Component {
   constructor(props) {
     super(props)
+   
     this.state = {
       email: ''
     }
+    this.portfolioData = [
+      {
+          name: 'Ring of fire',
+          status: 1,
+          url: 'https://narongded.github.io/ring-of-fire/',
+          github : 'https://github.com/Narongded/ring-of-fire',
+          image: '/img/ring-of-fire.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['html', 'css']
+      },
+      {
+          name: 'Ang Thong',
+          url: 'https://narongded.github.io/angthong/',
+          status: 1,
+          github : 'https://github.com/Narongded/angthong',
+          image: '/img/angtong.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['html', 'css']
+      },
+      {
+          name: 'Animal Figther',
+          url: '',
+          status: 0,
+          github : 'https://github.com/Narongded/Animal-Fighter',
+          image: '/img/animal-figter.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['C', 'SDL 2.0']
+      },
+      {
+          name: 'Pachon-VS-World',
+          url: '',
+          status: 0,
+          github : 'https://github.com/naive555/pachon-VS-World',
+          image: '/img/pachonVsworld.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['JAVA', 'Box2d']
+      },
+      {
+          name: 'Cineplex',
+          url: 'https://limitless-sierra-34349.herokuapp.com/index.html',
+          status: 1,
+          github : 'https://github.com/Narongded/cinema',
+          image: '/img/cinema.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Vue.js']
+      },
+      {
+          name: 'Carcare',
+          url: '',
+          status: 0,
+          github : 'https://github.com/Narongded/Carecare',
+          image: '/img/Carcare.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Django']
+      },
+      {
+          name: 'Ume Garden',
+          url: '',
+          status: 0,
+          github : 'https://github.com/tintinap/ume_garden',
+          image: '/img/fluuter.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Flutter', 'Google Firebase']
+      },
+      {
+          name: 'sop-reservation-service',
+          url: '',
+          status: 0,
+          github : 'https://github.com/810Teams/sop-reservation-service',
+          image: '/img/micro-service.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Java', 'Spring Boot' , 'Google App Engine']
+      },
+      {
+          name: 'Dormlab',
+          url: '',
+          status: 0,
+          github : 'https://github.com/Narongded/dormlab',
+          image: '/img/dormlab.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['AWS EC2']
+      },
+      {
+          name: 'Mesuem',
+          url: '',
+          status: 0,
+          github : 'https://github.com/Narongded/Mesuem',
+          image: '/img/Mesuem.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Node.js', 'mongoDB']
+      },
+      {
+          name: 'E-meeting',
+          url: '',
+          status: 0,
+          github : '',
+          image: '/img/e-meeting.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Node.js', 'mongoDB','PM2']
+      },
+      {
+          name: 'Petcare',
+          url: 'https://petcate.herokuapp.com/',
+          status: 0,
+          github : 'https://github.com/Narongded/Petcare',
+          image: '/img/petcare.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Node.js', 'mongoDB']
+      },
+      {
+          name: 'EX10',
+          url: 'https://ex10.tech/docs/index',
+          status: 0,
+          github : '',
+          image: '/img/ex10.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['React.js','Node.js','AWS s3']
+      },
+      {
+          name: 'Portfolio',
+          url: 'https://narongded-portfolio.herokuapp.com/',
+          status: 0,
+          github : 'https://github.com/Narongded/my-Portfolio',
+          image: '/img/portfolio.png',
+          type: 'โปรเจครายวิชา',
+          tools: ['Next.js']
+      }
+  ]
   }
+  
   componentDidMount() {
     // console.log(this.props)
     // console.log(process.env.NODE_ENV)
@@ -77,7 +207,7 @@ class Index extends React.Component {
         <div className="container my-5">
           <div id="projects" className="d-flex justify-content-center"><h2 className={'mx-auto mb-4 ' + css.headline}>My Project</h2></div>
           <div className="row">
-            {this.props.data.map((data, index) => (
+            {this.portfolioData.map((data, index) => (
               <div className="col-lg-3 col-sm-6 mb-4" key={index}>
 
                 <div className="card h-100">
@@ -109,7 +239,7 @@ class Index extends React.Component {
             ))}
           </div>
           <hr />
-          <div className="row d-flex justify-content-center">
+          {/* <div className="row d-flex justify-content-center">
             <div className="input-group lg-3">
               <input type="text" className="form-control"
                 placeholder="Email for Send Resume" aria-label="Email"
@@ -119,7 +249,7 @@ class Index extends React.Component {
                 id="button-addon2"
                 onClick={() => this.handleSendEmail()}>Email</button>
             </div>
-          </div>
+          </div> */}
         </div>
 
       </div >
@@ -128,12 +258,12 @@ class Index extends React.Component {
   }
 }
 
-export const getServerSideProps = async () => {
-  const res = await fetch('https://narongded-portfolio.herokuapp.com/api/Index')
-  const data = await res.json()
-  return {
-    props: data,
-  }
+// export const getServerSideProps = async () => {
+//   const res = await fetch('https://narongded-portfolio.herokuapp.com/api/Index')
+//   const data = await res.json()
+//   return {
+//     props: data,
+//   }
 
-}
+// }
 export default Index
