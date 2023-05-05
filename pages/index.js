@@ -15,7 +15,7 @@ class Index extends React.Component {
           status: 1,
           url: 'https://narongded.github.io/ring-of-fire/',
           github : 'https://github.com/Narongded/ring-of-fire',
-          image: '/img/ring-of-fire.png',
+          image: 'img/ring-of-fire.png',
           type: 'โปรเจครายวิชา',
           tools: ['html', 'css']
       },
@@ -24,7 +24,7 @@ class Index extends React.Component {
           url: 'https://narongded.github.io/angthong/',
           status: 1,
           github : 'https://github.com/Narongded/angthong',
-          image: '/img/angtong.png',
+          image: 'img/angtong.png',
           type: 'โปรเจครายวิชา',
           tools: ['html', 'css']
       },
@@ -33,7 +33,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/Narongded/Animal-Fighter',
-          image: '/img/animal-figter.png',
+          image: 'img/animal-figter.png',
           type: 'โปรเจครายวิชา',
           tools: ['C', 'SDL 2.0']
       },
@@ -42,7 +42,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/naive555/pachon-VS-World',
-          image: '/img/pachonVsworld.png',
+          image: 'img/pachonVsworld.png',
           type: 'โปรเจครายวิชา',
           tools: ['JAVA', 'Box2d']
       },
@@ -51,7 +51,7 @@ class Index extends React.Component {
           url: 'https://limitless-sierra-34349.herokuapp.com/index.html',
           status: 1,
           github : 'https://github.com/Narongded/cinema',
-          image: '/img/cinema.png',
+          image: 'img/cinema.png',
           type: 'โปรเจครายวิชา',
           tools: ['Vue.js']
       },
@@ -60,7 +60,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/Narongded/Carecare',
-          image: '/img/Carcare.png',
+          image: 'img/Carcare.png',
           type: 'โปรเจครายวิชา',
           tools: ['Django']
       },
@@ -69,7 +69,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/tintinap/ume_garden',
-          image: '/img/fluuter.png',
+          image: 'img/fluuter.png',
           type: 'โปรเจครายวิชา',
           tools: ['Flutter', 'Google Firebase']
       },
@@ -78,7 +78,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/810Teams/sop-reservation-service',
-          image: '/img/micro-service.png',
+          image: 'img/micro-service.png',
           type: 'โปรเจครายวิชา',
           tools: ['Java', 'Spring Boot' , 'Google App Engine']
       },
@@ -87,7 +87,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/Narongded/dormlab',
-          image: '/img/dormlab.png',
+          image: 'img/dormlab.png',
           type: 'โปรเจครายวิชา',
           tools: ['AWS EC2']
       },
@@ -96,7 +96,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : 'https://github.com/Narongded/Mesuem',
-          image: '/img/Mesuem.png',
+          image: 'img/Mesuem.png',
           type: 'โปรเจครายวิชา',
           tools: ['Node.js', 'mongoDB']
       },
@@ -105,7 +105,7 @@ class Index extends React.Component {
           url: '',
           status: 0,
           github : '',
-          image: '/img/e-meeting.png',
+          image: 'img/e-meeting.png',
           type: 'โปรเจครายวิชา',
           tools: ['Node.js', 'mongoDB','PM2']
       },
@@ -114,7 +114,7 @@ class Index extends React.Component {
           url: 'https://petcate.herokuapp.com/',
           status: 0,
           github : 'https://github.com/Narongded/Petcare',
-          image: '/img/petcare.png',
+          image: 'img/petcare.png',
           type: 'โปรเจครายวิชา',
           tools: ['Node.js', 'mongoDB']
       },
@@ -123,7 +123,7 @@ class Index extends React.Component {
           url: 'https://ex10.tech/docs/index',
           status: 0,
           github : '',
-          image: '/img/ex10.png',
+          image: 'img/ex10.png',
           type: 'โปรเจครายวิชา',
           tools: ['React.js','Node.js','AWS s3']
       },
@@ -132,7 +132,7 @@ class Index extends React.Component {
           url: 'https://narongded-portfolio.herokuapp.com/',
           status: 0,
           github : 'https://github.com/Narongded/my-Portfolio',
-          image: '/img/portfolio.png',
+          image: 'img/portfolio.png',
           type: 'โปรเจครายวิชา',
           tools: ['Next.js']
       }
@@ -162,7 +162,7 @@ class Index extends React.Component {
           <div className="container p-5">
             <div className="row">
               <div className="col-md-3">
-                <img className="w-100" style={{ borderRadius: '50%' }} src="/img/profile.jpg" />
+                <img className="w-100" style={{ borderRadius: '50%' }} src="img/profile.jpg" />
               </div>
               <div className="col-md-9 d-flex justify-content-center align-items-center">
                 <h1 className="mt-3 text-center text-dark">Narongded Pinprechachai (Champ)</h1>
