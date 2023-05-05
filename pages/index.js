@@ -144,6 +144,7 @@ class Index extends React.Component {
     // console.log(process.env.NODE_ENV)
     // console.log(this.props.data)
     // console.log(this.state.name)
+     // console.log(this.state.name)
   }
   handleSendEmail = async () => {
     await fetch('https://narongded-portfolio.herokuapp.com/api/SendEmail',
@@ -178,7 +179,7 @@ class Index extends React.Component {
             <div className="col-lg-3 col-sm-6 p-3">
               <h3 className={css.headline}>Information</h3>
               <p>Narongded Pinprechachai</p>
-              <p>Age : 23 years</p>
+              <p>Age : 25 years</p>
               <p id={"123"}>Birthdate : 8 March 1998</p>
             </div>
             <div className="col-lg-3 col-sm-6 mb-4 p-3">
